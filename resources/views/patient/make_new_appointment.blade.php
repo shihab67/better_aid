@@ -6,9 +6,9 @@
         <div class="card shadow border-0 p-4">
             <div class="mb-3">
                 <h6 class="align-items-center mb-0">Find Your Doctor</h6>
-                <span>History</span>
             </div>
             <div class="row">
+                <span>History</span>
                 <div class="col-xl-4 col-lg-6 mt-4">
                     <div class="card">
                         <div class="card-body">
