@@ -1,15 +1,31 @@
 <div class="col-xl-2 col-lg-4 col-md-5 col-12 mb-4">
     <div class="rounded shadow overflow-hidden sticky-bar">
-        <ul class="list-unstyled sidebar-nav mb-0">
-            <li class="navbar-item"><a href="doctor-appointment.html" class="navbar-link">Home</a></li>
-            <li class="navbar-item"><a href="doctor-appointment.html" class="navbar-link">Dashboard</a>
-            </li>
-            <li class="navbar-item"><a href="doctor-appointment.html" class="navbar-link">My
-                    Appointments</a></li>
-            <li class="navbar-item"><a href="doctor-appointment.html" class="navbar-link">My
-                    Payments</a></li>
-            <li class="navbar-item"><a href="doctor-appointment.html" class="navbar-link">My
-                    Prescriptions</a></li>
-        </ul>
+        <div class="page-wrapper chiller-theme toggled">
+            <nav id="sidebar" class="sidebar-wrapper">
+                <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
+                    <ul class="sidebar-menu pt-3">
+                        <li><a href="/"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)"><i class="fas fa-calendar-check me-2 d-inline-block"></i>My Appointments</a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="/all-appointments">All Appointments</a></li>
+                                    <li><a href="/make-new-appointment">Make New Appointment</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="/my-payments"><i class="fas fa-money-bill-wave me-2 d-inline-block"></i>My Payments</a></li>
+                        
+                        <li><a href="/my-prescriptions"><i class="fas fa-prescription me-2 d-inline-block"></i>My Prescriptions</a></li>
+
+                    </ul>
+                    <!-- sidebar-menu  -->
+                </div>
+                <!-- sidebar-content  -->
+            </nav>
+            <!-- sidebar-wrapper  -->
+        </div>
     </div>
 </div>

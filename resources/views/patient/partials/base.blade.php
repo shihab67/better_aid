@@ -14,6 +14,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('frontend/images/favicon.ico') }}">
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="{{ asset('frontend/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- SLIDER -->
     <link rel="stylesheet" href="{{ asset('frontend/css/tiny-slider.css') }}" />
@@ -23,7 +26,8 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/line.css') }}">
     <!-- Css -->
     <link href="{{ asset('frontend/css/style.min.css') }}" rel="stylesheet" type="text/css" />
-    @yield('css')
+    <link href="{{ asset('frontend/css/sidebar.min.css') }}" rel="stylesheet" type="text/css" />
+    @stack('css')
 
 </head>
 
@@ -80,7 +84,8 @@
     <script src="{{ asset('frontend/js/feather.min.js') }}"></script>
     <!-- Main Js -->
     <script src="{{ asset('frontend/js/app.js') }}"></script>
-    @yield('js')
+    <script src="{{ asset('frontend/js/sidebar.js') }}"></script>
+    @stack('js')
 </body>
 
 </html>

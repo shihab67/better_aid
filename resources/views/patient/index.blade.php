@@ -1,5 +1,12 @@
 @extends('patient.partials.base')
 @section('title', 'Home')
+@push('css')
+<style>
+    .icons{
+     font-size: 27px;   
+    }
+</style>
+@endpush
 @section('content')
 <div class="row">
     <div class="col-xl-3 col-lg-6">
@@ -45,16 +52,16 @@
 
     <div class="col-xl-6 col-lg-6">
         <div class="card shadow border-0 p-4">
-            <div class="d-flex justify-content-between mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
                 <h6 class="align-items-center mb-0">Up Coming Appointment</h6>
-                <a href="#" type="button" class="btn btn-primary btn-sm">All Appointments</a>
+                <a href="#" type="button" class="btn btn-primary">All Appointments</a>
             </div>
             <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="d-flex justify-content-around">
-                        <p>Session# abc123</p>
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <p class="m-0">Session# abc123</p>
                     </div>
-                    <div>
+                    <div class="align-items-center">
                         <span class="badge badge-pill badge-primary badge-sm">Offline</span>
                         <span>Single Session</span>
                     </div>
@@ -78,9 +85,9 @@
                     <div class="d-flex justify-content-center mt-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="d-flex justify-content-around mt-2">
-                        <a href="#" type="button" class="btn btn-primary">Reschedule</a>
-                        <a href="#" type="button" class="btn btn-danger">Cancel</a>
+                    <div class="d-flex justify-content-center mt-2">
+                        <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
+                        <a href="#" type="button" class="btn btn-danger m-2">Cancel</a>
                     </div>
                 </div>
             </div>
@@ -119,82 +126,82 @@
 <div class="row">
     <div class="col-xl-5 col-lg-6 mt-4">
         <div class="card border-0 shadow rounded">
-            <div class="d-flex justify-content-between p-4 border-bottom">
+            <div class="d-flex justify-content-between p-2 border-bottom align-items-center">
                 <h6 class="mb-0">E-Prescriptions</h6>
-                <a href="" type="button" class="btn btn-primary btn-sm">View All</a>
+                <a href="">View All</a>
             </div>
 
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Session#</th>
+                        <th scope="col" class="text-center">Session#</th>
                         <th scope="col">Doctor</th>
                         <th scope="col">Date</th>
-                        <th scope="col">Prescription</th>
+                        <th scope="col" class="text-center">Prescription</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>
                             <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
                                 class="rounded-circle" style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>
                             <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
                                 class="rounded-circle" style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>
                             <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
                                 class="rounded-circle" style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>
                             <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
                                 class="rounded-circle" style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>
                             <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
                                 class="rounded-circle" style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
@@ -207,61 +214,61 @@
 
     <div class="col-xl-4 col-lg-6 mt-4">
         <div class="card border-0 shadow rounded">
-            <div class="d-flex justify-content-between p-4 border-bottom">
+            <div class="d-flex justify-content-between align-items-center p-2 border-bottom">
                 <h6 class="mb-0">Invoices</h6>
-                <a href="" type="button" class="btn btn-primary btn-sm">View All</a>
+                <a href="">View All</a>
             </div>
 
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Session#</th>
+                        <th scope="col" class="text-center">Session#</th>
                         <th scope="col">Date</th>
-                        <th scope="col">Invoice</th>
+                        <th scope="col" class="text-center">Invoice</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>abc123</td>
+                        <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
-                        <td>
-                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal"
+                        <td class="text-center">
+                            <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>

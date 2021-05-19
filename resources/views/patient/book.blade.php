@@ -1,36 +1,21 @@
 @extends('patient.partials.base')
 @section('title', 'Book')
+@push('css')
+<style>
+    @media only screen and (min-width:767px) {
+        .divider{
+            background-color: #000;
+            height: 320px;
+            width: 3px;
+        }
+    }
+</style>
+@endpush
 @section('content')
 <!-- Start Hero -->
 <div class="row mb-5">
     <div class="col-12">
         <div class="card border-0 shadow rounded p-4">
-            <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded shadow overflow-hidden bg-light"
-                id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link rounded-0 active" id="overview-tab" data-bs-toggle="pill" href="#pills-overview"
-                        role="tab" aria-controls="pills-overview" aria-selected="false">
-                        <div class="text-center pt-1 pb-1">
-                            <h4 class="title fw-normal mb-0">Overview</h4>
-                        </div>
-                    </a>
-                    <!--end nav link-->
-                </li>
-                <!--end nav item-->
-
-                <li class="nav-item">
-                    <a class="nav-link rounded-0" id="review-tab" data-bs-toggle="pill" href="#pills-review" role="tab"
-                        aria-controls="pills-review" aria-selected="false">
-                        <div class="text-center pt-1 pb-1">
-                            <h4 class="title fw-normal mb-0">Reviews</h4>
-                        </div>
-                    </a>
-                    <!--end nav link-->
-                </li>
-                <!--end nav item-->
-            </ul>
-            <!--end nav pills-->
-
             <div class="tab-content mt-2" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-overview" role="tabpanel"
                     aria-labelledby="overview-tab">
@@ -124,20 +109,22 @@
 
                     <h6>Specialties: </h6>
 
-                    <ul class="list-unstyled mt-4">
-                        <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Women's health services</li>
-                        <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Pregnancy care</li>
-                        <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Surgical procedures</li>
-                        <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Specialty care</li>
-                        <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Conclusion</li>
-                    </ul>
-
-                </div>
-                <!--end teb pane-->
-
-                <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="review-tab">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 mt-4 pt-2 text-center">
+                    <div class="row justify-content-around">
+                        <div class="col-md-5">
+                            <ul class="list-unstyled mt-4">
+                                <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Women's health
+                                    services</li>
+                                <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Pregnancy care</li>
+                                <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Surgical procedures
+                                </li>
+                                <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Specialty care</li>
+                                <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Conclusion</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="divider"></div>
+                        </div>
+                        <div class="col-md-5">
                             <div class="client-review-slider">
                                 <div class="tiny-slide text-center">
                                     <p class="text-muted h6 fw-normal fst-italic">" It seems that only fragments of the
@@ -251,11 +238,8 @@
                                 </div>
                                 <!--end customer testi-->
                             </div>
-                            <!--end carousel-->
                         </div>
-                        <!--end col-->
                     </div>
-                    <!--end row-->
                 </div>
                 <!--end teb pane-->
             </div>

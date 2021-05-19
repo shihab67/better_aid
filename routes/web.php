@@ -25,6 +25,12 @@ Route::get('/make-new-appointment', function () {
 Route::get('/book', function () {
     return view('patient.book');
 });
+Route::get('/my-payments', function () {
+    return view('patient.my-payments');
+});
+Route::get('/my-prescriptions', function () {
+    return view('patient.my-prescriptions');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

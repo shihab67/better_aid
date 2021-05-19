@@ -1,5 +1,38 @@
 @extends('patient.partials.base')
 @section('title', 'Make New Appointment')
+@push('css')
+<style>
+    .tns-controls{
+        outline: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .tns-controls button {
+        padding: 8px 20px;
+        margin: 5px;
+        outline: none;
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border-radius: 5px;
+        background-color: #396cf0 !important;
+        border: 1px solid #396cf0 !important;
+        color: #fff !important;
+        box-shadow: 0 3px 5px 0 rgb(57 108 240 / 30%);
+    }
+    .icons{
+     font-size: 27px;   
+    }
+    @media only screen and (min-width:767px) {
+        .team {
+            height: 600px;
+            width: 300px;
+        }
+    }
+</style>
+@endpush
 @section('content')
 <div class="row">
     <div class="col-xl-12 col-lg-6">
@@ -9,61 +42,99 @@
             </div>
             <div class="row">
                 <span>History</span>
-                <div class="col-xl-4 col-lg-6 mt-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-around mt-2">
-                                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; height: 75px;">
-                                <div>
-                                    <h4>John Nonny</h4>
-                                    <span class="badge badge-pill badge-primary">Divorce</span>
-                                    <span class="badge badge-pill badge-primary">Depression</span>
+                <div class="slider-range-four">
+                    <div class="col-xl-4 col-lg-6 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
+                                        class="rounded-circle" style="width: 75px; height: 75px;">
+                                    <div>
+                                        <h4>John Nonny</h4>
+                                        <span class="badge badge-pill badge-primary">Divorce</span>
+                                        <span class="badge badge-pill badge-primary">Depression</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-2 align-items-center">
-                                <h5>500 BDT/Session</h5>
-                                <a href="/book" type="button" class="btn btn-primary">Book</a>
+                                <div class="d-flex justify-content-between mt-2 align-items-center">
+                                    <h5>500 BDT/Session</h5>
+                                    <a href="/book" type="button" class="btn btn-primary">Book</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--end col-->
-                <div class="col-xl-4 col-lg-6 mt-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-around mt-2">
-                                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; height: 75px;">
-                                <div>
-                                    <h4>John Nonny</h4>
-                                    <span class="badge badge-pill badge-primary">Divorce</span>
-                                    <span class="badge badge-pill badge-primary">Depression</span>
+                    <div class="col-xl-4 col-lg-6 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
+                                        class="rounded-circle" style="width: 75px; height: 75px;">
+                                    <div>
+                                        <h4>John Nonny</h4>
+                                        <span class="badge badge-pill badge-primary">Divorce</span>
+                                        <span class="badge badge-pill badge-primary">Depression</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-2 align-items-center">
-                                <h5>500 BDT/Session</h5>
-                                <a href="/book" type="button" class="btn btn-primary">Book</a>
+                                <div class="d-flex justify-content-between mt-2 align-items-center">
+                                    <h5>500 BDT/Session</h5>
+                                    <a href="/book" type="button" class="btn btn-primary">Book</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--end col-->
-                <div class="col-xl-4 col-lg-6 mt-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-around mt-2">
-                                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; height: 75px;">
-                                <div>
-                                    <h4>John Nonny</h4>
-                                    <span class="badge badge-pill badge-primary">Divorce</span>
-                                    <span class="badge badge-pill badge-primary">Depression</span>
+                    <div class="col-xl-4 col-lg-6 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
+                                        class="rounded-circle" style="width: 75px; height: 75px;">
+                                    <div>
+                                        <h4>John Nonny</h4>
+                                        <span class="badge badge-pill badge-primary">Divorce</span>
+                                        <span class="badge badge-pill badge-primary">Depression</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2 align-items-center">
+                                    <h5>500 BDT/Session</h5>
+                                    <a href="/book" type="button" class="btn btn-primary">Book</a>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-2 align-items-center">
-                                <h5>500 BDT/Session</h5>
-                                <a href="/book" type="button" class="btn btn-primary">Book</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
+                                        class="rounded-circle" style="width: 75px; height: 75px;">
+                                    <div>
+                                        <h4>John Nonny</h4>
+                                        <span class="badge badge-pill badge-primary">Divorce</span>
+                                        <span class="badge badge-pill badge-primary">Depression</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2 align-items-center">
+                                    <h5>500 BDT/Session</h5>
+                                    <a href="/book" type="button" class="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
+                                        class="rounded-circle" style="width: 75px; height: 75px;">
+                                    <div>
+                                        <h4>John Nonny</h4>
+                                        <span class="badge badge-pill badge-primary">Divorce</span>
+                                        <span class="badge badge-pill badge-primary">Depression</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2 align-items-center">
+                                    <h5>500 BDT/Session</h5>
+                                    <a href="/book" type="button" class="btn btn-primary">Book</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -109,7 +180,7 @@
 </div>
 
 <div class="row mt-4">
-    <div class="col-xl-3 col-lg-6">
+    <div class="col-xl-3 col--6 col-lg-6">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -128,37 +199,35 @@
                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
                         </ul>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Name:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">John Nonny</small>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Degree:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">FCPS, MBBS</small>
                     </li>
                     <li>
-                        <small class="ms-2 font-weight-bold">Speciality:</small> <br>
-                        <div class="d-flex justify-content-around">
-                            <small class="badge badge-pill badge-primary">Divorce</small>
-                            <small class="badge badge-pill badge-primary">Depression</small>
+                        <div class="d-flex">
+                            <small class="badge badge-pill badge-primary m-1">Divorce</small>
+                            <small class="badge badge-pill badge-primary m-1">Depression</small>
                         </div>
                     </li>
-                    <li class="d-flex justify-content-between">
+                    <li class="d-flex justify-content-around">
                         <small class="ms-2 font-weight-bold">Experience:</small>
                         <small class="text-muted ms-2">20 Years</small>
                     </li>
                 </ul>
                 <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item"><h5>500 BDT/Session</h5>
+                    <li class="list-inline-item">
+                        <h5>500 BDT/Session</h5>
+                    </li> <br>
+                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-md">Book</a>
                     </li>
-                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-sm">Book</a>
-                </li>
                 </ul>
             </div>
         </div>
     </div>
     <!--end col-->
-    <div class="col-xl-3 col-lg-6">
+    <div class="col-xl-3 col--6 col-lg-6">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -177,37 +246,35 @@
                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
                         </ul>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Name:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">John Nonny</small>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Degree:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">FCPS, MBBS</small>
                     </li>
                     <li>
-                        <small class="ms-2 font-weight-bold">Speciality:</small> <br>
-                        <div class="d-flex justify-content-around">
-                            <small class="badge badge-pill badge-primary">Divorce</small>
-                            <small class="badge badge-pill badge-primary">Depression</small>
+                        <div class="d-flex">
+                            <small class="badge badge-pill badge-primary m-1">Divorce</small>
+                            <small class="badge badge-pill badge-primary m-1">Depression</small>
                         </div>
                     </li>
-                    <li class="d-flex justify-content-between">
+                    <li class="d-flex justify-content-around">
                         <small class="ms-2 font-weight-bold">Experience:</small>
                         <small class="text-muted ms-2">20 Years</small>
                     </li>
                 </ul>
                 <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item"><h5>500 BDT/Session</h5>
+                    <li class="list-inline-item">
+                        <h5>500 BDT/Session</h5>
+                    </li> <br>
+                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-md">Book</a>
                     </li>
-                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-sm">Book</a>
-                </li>
                 </ul>
             </div>
         </div>
     </div>
     <!--end col-->
-    <div class="col-xl-3 col-lg-6">
+    <div class="col-xl-3 col--6 col-lg-6">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -226,37 +293,35 @@
                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
                         </ul>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Name:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">John Nonny</small>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Degree:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">FCPS, MBBS</small>
                     </li>
                     <li>
-                        <small class="ms-2 font-weight-bold">Speciality:</small> <br>
-                        <div class="d-flex justify-content-around">
-                            <small class="badge badge-pill badge-primary">Divorce</small>
-                            <small class="badge badge-pill badge-primary">Depression</small>
+                        <div class="d-flex">
+                            <small class="badge badge-pill badge-primary m-1">Divorce</small>
+                            <small class="badge badge-pill badge-primary m-1">Depression</small>
                         </div>
                     </li>
-                    <li class="d-flex justify-content-between">
+                    <li class="d-flex justify-content-around">
                         <small class="ms-2 font-weight-bold">Experience:</small>
                         <small class="text-muted ms-2">20 Years</small>
                     </li>
                 </ul>
                 <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item"><h5>500 BDT/Session</h5>
+                    <li class="list-inline-item">
+                        <h5>500 BDT/Session</h5>
+                    </li> <br>
+                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-md">Book</a>
                     </li>
-                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-sm">Book</a>
-                </li>
                 </ul>
             </div>
         </div>
     </div>
     <!--end col-->
-    <div class="col-xl-3 col-lg-6">
+    <div class="col-xl-3 col--6 col-lg-6">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -275,31 +340,29 @@
                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
                         </ul>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Name:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">John Nonny</small>
                     </li>
-                    <li class="d-flex justify-content-between">
-                        <small class="ms-2 font-weight-bold">Degree:</small>
+                    <li class="d-flex justify-content-center">
                         <small class="text-muted ms-2">FCPS, MBBS</small>
                     </li>
                     <li>
-                        <small class="ms-2 font-weight-bold">Speciality:</small> <br>
-                        <div class="d-flex justify-content-around">
-                            <small class="badge badge-pill badge-primary">Divorce</small>
-                            <small class="badge badge-pill badge-primary">Depression</small>
+                        <div class="d-flex">
+                            <small class="badge badge-pill badge-primary m-1">Divorce</small>
+                            <small class="badge badge-pill badge-primary m-1">Depression</small>
                         </div>
                     </li>
-                    <li class="d-flex justify-content-between">
+                    <li class="d-flex justify-content-around">
                         <small class="ms-2 font-weight-bold">Experience:</small>
                         <small class="text-muted ms-2">20 Years</small>
                     </li>
                 </ul>
                 <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item"><h5>500 BDT/Session</h5>
+                    <li class="list-inline-item">
+                        <h5>500 BDT/Session</h5>
+                    </li> <br>
+                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-md">Book</a>
                     </li>
-                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-sm">Book</a>
-                </li>
                 </ul>
             </div>
         </div>

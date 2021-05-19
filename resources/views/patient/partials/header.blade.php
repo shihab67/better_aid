@@ -6,14 +6,17 @@
             <a class="logo" href="index.html">
                 <img src="{{ asset('frontend/images/logo-dark.png') }}" height="22" alt="">
             </a>
+            <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-2" href="#" style="display: none;">
+                <i class="uil uil-bars"></i>
+            </a>
         </div>
         <!-- End Logo container-->
-        <ul class="dropdowns list-inline mb-0">
+        <ul class="dropdowns list-inline mb-0 d-flex align-items-center mt-3">
             <li class="list-inline-item mb-0">
                 <div class="dropdown dropdown-primary">
-                    <button type="button" class="btn btn-icon btn-pills btn-primary dropdown-toggle p-0"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                            class="mdi mdi-phone icons"></i></button>
+                    <span class="dropdown-toggle p-0"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 3rem;"><i
+                            class="mdi mdi-phone icons"></i></span>
                     <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0 text-center"
                         style="width: 200px;">
                         <a href="tel:018XXXXXXXX">018XXXXXXXX</a>
@@ -70,9 +73,7 @@
             <!-- Navigation Menu-->
             <ul class="navigation-menu nav-left">
 
-                <li><a href="/" class="sub-menu-item">Home</a></li>
-
-                <li><a href="#" class="sub-menu-item">Dashboard</a></li>
+                <li><a href="/" class="sub-menu-item">Dashboard</a></li>
 
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">My Appointments</a><span class="menu-arrow"></span>
@@ -82,9 +83,9 @@
                     </ul>
                 </li>
 
-                <li><a href="#" class="sub-menu-item">My Payments</a></li>
+                <li><a href="/my-payments" class="sub-menu-item">My Payments</a></li>
 
-                <li><a href="#" class="sub-menu-item">My Prescriptions</a></li>
+                <li><a href="/my-prescriptions" class="sub-menu-item">My Prescriptions</a></li>
 
             </ul>
             <!--end navigation menu-->
