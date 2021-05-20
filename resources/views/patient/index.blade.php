@@ -2,8 +2,8 @@
 @section('title', 'Home')
 @push('css')
 <style>
-    .icons{
-     font-size: 27px;   
+    .icons {
+        font-size: 27px;
     }
 </style>
 @endpush
@@ -41,8 +41,8 @@
                     </li>
                 </ul>
                 <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item"><a href="#" type="button"
-                            class="btn btn-primary btn-sm">Update Profile</a>
+                    <li class="list-inline-item"><a href="#" type="button" class="btn btn-primary btn-sm">Update
+                            Profile</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
         <div class="card shadow border-0 p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h6 class="align-items-center mb-0">Up Coming Appointment</h6>
-                <a href="#" type="button" class="btn btn-primary">All Appointments</a>
+                <a href="#">All Appointments</a>
             </div>
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
@@ -77,8 +77,8 @@
                             Meeting</a>
                     </div>
                     <div class="d-flex justify-content-between mt-2">
-                        <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                            class="rounded-circle" style="width: 75px">
+                        <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
+                            style="width: 75px">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
                             provident.</p>
                     </div>
@@ -92,6 +92,20 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12">
+                <div class="card border-0 shadow rounded mt-4">
+                    <div class="p-4">
+                        <h6 class="mb-0">Contact Us</h6>
+                    </div>
+                    <div class="mb-4 d-flex justify-content-around align-items-center">
+                        <a href=""><i class="fa fa-phone icons"></i></a>
+                        <a href=""><i class="fa fa-envelope icons"></i></a>
+                        <a href=""><i class="fab fa-whatsapp-square icons"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--end col-->
 
@@ -99,8 +113,8 @@
         <div class="card shadow border-0 p-4">
             <h6 class="align-items-center mb-0">Rate your doctor</h6>
             <div class="d-flex justify-content-between mt-4">
-                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                    class="rounded-circle" style="width: 60px; height: 60px;">
+                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
+                    style="width: 60px; height: 60px;">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="mt-2">
@@ -118,13 +132,24 @@
                 <textarea name="" id="" rows="7" class="form-control"></textarea>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12">
+                <div class="card border-0 shadow rounded mt-4">
+                    <div class="p-4">
+                        <div class="client-review-slider">
+                            <p>Ad for coupons/offers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--end col-->
 </div>
 <!--end row-->
 
 <div class="row">
-    <div class="col-xl-5 col-lg-6 mt-4">
+    <div class="col-xl-6 col-lg-6 mt-4">
         <div class="card border-0 shadow rounded">
             <div class="d-flex justify-content-between p-2 border-bottom align-items-center">
                 <h6 class="mb-0">E-Prescriptions</h6>
@@ -144,65 +169,60 @@
                     <tr>
                         <td class="text-center">abc123</td>
                         <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
+                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td class="text-center">abc123</td>
                         <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
+                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td class="text-center">abc123</td>
                         <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
+                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td class="text-center">abc123</td>
                         <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
+                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td class="text-center">abc123</td>
                         <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
+                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
                         </td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
@@ -212,7 +232,7 @@
     </div>
     <!--end col-->
 
-    <div class="col-xl-4 col-lg-6 mt-4">
+    <div class="col-xl-6 col-lg-6 mt-4">
         <div class="card border-0 shadow rounded">
             <div class="d-flex justify-content-between align-items-center p-2 border-bottom">
                 <h6 class="mb-0">Invoices</h6>
@@ -232,8 +252,7 @@
                         <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
@@ -241,8 +260,7 @@
                         <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
@@ -250,8 +268,7 @@
                         <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
@@ -259,8 +276,7 @@
                         <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
@@ -268,44 +284,12 @@
                         <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
                                     class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
-    <!--end col-->
-
-    <div class="col-xl-3 col-lg-12 mt-4">
-        <div class="card border-0 shadow rounded">
-            <div class="p-4">
-                <div class="client-review-slider">
-                    <p>Ad for coupons/offers</p>
-                </div>
-            </div>
-        </div>
-        <div class="card border-0 shadow rounded mt-4">
-            <div class="p-4">
-                <h6 class="mb-0">Contact Us</h6>
-            </div>
-            <ul class="list-unstyled mt-4 mb-2">
-                <li class="d-flex justify-content-around">
-                    <small class="ms-2 font-weight-bold">Phone:</small>
-                    <small class="text-muted ms-2">018XXXXXXXX</small>
-                </li>
-                <li class="d-flex justify-content-around">
-                    <small class="ms-2 font-weight-bold">Email:</small>
-                    <small class="text-muted ms-2"><a
-                            href="mailto:info@betteraid.com">info@betteraid.com</a></small>
-                </li>
-                <li class="d-flex justify-content-around">
-                    <small class="ms-2 font-weight-bold">Whatsapp:</small>
-                    <small class="text-muted ms-2">wp.com/betteraid</small>
-                </li>
-            </ul>
         </div>
     </div>
     <!--end col-->

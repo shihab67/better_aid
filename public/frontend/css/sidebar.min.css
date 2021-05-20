@@ -42,7 +42,7 @@
 .page-wrapper .sidebar-wrapper {
     width: 300px;
     position: fixed;
-    z-index: 9999;
+    z-index: 500 !important;
     top: 10%;
 }
 @media (min-width: 1025px) {
