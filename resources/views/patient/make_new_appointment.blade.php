@@ -2,34 +2,88 @@
 @section('title', 'Make New Appointment')
 @push('css')
 <style>
-    .tns-controls{
+    .tns-controls {
         outline: none;
         display: flex;
         justify-content: flex-end;
     }
+
+    .tns-controls {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 50%;
+        transform: translatey(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 9999;
+    }
+
     .tns-controls button {
-        padding: 8px 20px;
-        margin: 5px;
+        padding: 5px 5px;
+        margin: -10px;
         outline: none;
         text-decoration: none;
-        font-size: 12px;
-        letter-spacing: 0.5px;
+        font-size: 13px;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         border-radius: 5px;
-        background-color: #396cf0 !important;
-        border: 1px solid #396cf0 !important;
-        color: #fff !important;
-        box-shadow: 0 3px 5px 0 rgb(57 108 240 / 30%);
+        background-color: #2260f1 !important;
+        border: 1px solid #2260f1 !important;
+        color: transparent;
+        box-shadow: 0 3px 5px 0 rgb(57 108 240 / 80%);
+        opacity: 0.8;
     }
-    .icons{
-     font-size: 27px;   
+    .tns-controls button:nth-child(1)::before{
+        content: '\00AB';
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
     }
+    .tns-controls button:nth-child(2)::after{
+        content: '\00BB';
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+
+    .icons {
+        font-size: 27px;
+    }
+
     @media only screen and (min-width:767px) {
         .team {
             height: 600px;
             width: 300px;
         }
+    }
+
+    .tns-controls {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 50%;
+        transform: translatey(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 9999;
+    }
+
+    .controls:focus {
+        outline: none;
+    }
+
+    .controls li:hover {
+        cursor: pointer;
     }
 </style>
 @endpush

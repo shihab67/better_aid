@@ -3,11 +3,42 @@
 @push('css')
 <style>
     @media only screen and (min-width:767px) {
-        .divider{
+        .divider {
             background-color: #000;
             height: 320px;
             width: 3px;
         }
+    }
+
+    .radio-toolbar input[type="radio"] {
+        opacity: 0;
+        position: fixed;
+        width: 0;
+    }
+
+    .radio-toolbar label {
+        display: inline-block;
+        background-color: #ddd;
+        padding: 6px 12px;
+        font-family: sans-serif, Arial;
+        font-size: 14px;
+        border: 2px solid #444;
+        border-radius: 90px;
+    }
+
+    .radio-toolbar label:hover {
+        background-color: #215AEE;
+        color: #fff;
+    }
+
+    .radio-toolbar input[type="radio"]:focus+label {
+        border: 2px solid #215AEE;
+    }
+
+    .radio-toolbar input[type="radio"]:checked+label {
+        background-color: #215AEE;
+        border-color: #215AEE;
+        color: #fff;
     }
 </style>
 @endpush
@@ -19,8 +50,8 @@
             <div class="tab-content mt-2" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-overview" role="tabpanel"
                     aria-labelledby="overview-tab">
-                    <div class="d-flex mt-3 justify-content-between p-4">
-                        <div class="d-flex">
+                    <div class="d-flex mt-3 justify-content-between p-4 doctor row">
+                        <div class="d-flex col-md-4 col-sm-12 col-lg-4 mt-4">
                             <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
                                 style="width: 150px; height: 150px;">
                             <div>
@@ -29,7 +60,7 @@
                                     class="text-primary">Ph.D</a>
                             </div>
                         </div>
-                        <div class="card border-0 p-3 rounded shadow">
+                        <div class="card border-0 p-3 rounded shadow col-md-3 col-sm-12 col-lg-3 mt-4">
                             <h6>Time Table</h6>
                             <ul class="list-unstyled mb-0">
                                 <li class="d-flex justify-content-between my-1">
@@ -77,7 +108,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card border-0 p-3 rounded shadow">
+                        <div class="card border-0 p-3 rounded shadow col-md-3 col-sm-12 col-lg-3 mt-4 ml-4">
                             <h6>Price Chart</h6>
                             <ul class="list-unstyled mb-0">
                                 <li class="d-flex justify-content-between my-1">
@@ -260,85 +291,68 @@
                     <div class="col-lg-12">
                         <div class="mb-3">
                             <label class="form-label">Patient Name <span class="text-danger">*</span></label>
-                            <input name="name" id="name2" type="text" class="form-control" placeholder="Patient Name :">
+                            <input name="name" id="name2" type="text" class="form-control">
                         </div>
                     </div>
                     <!--end col-->
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="mb-3">
-                            <label class="form-label">Departments</label>
-                            <select class="form-control department-name select2input">
-                                <option value="EY">Eye Care</option>
-                                <option value="GY">Gynecologist</option>
-                                <option value="PS">Psychotherapist</option>
-                                <option value="OR">Orthopedic</option>
-                                <option value="DE">Dentist</option>
-                                <option value="GA">Gastrologist</option>
-                                <option value="UR">Urologist</option>
-                                <option value="NE">Neurologist</option>
-                            </select>
+                            <label class="form-label">Reason For Appointment (Summary) <span
+                                    class="text-danger">*</span></label>
+                            <textarea name="" id="" rows="10" class="form-control"></textarea>
                         </div>
                     </div>
                     <!--end col-->
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label class="form-label">Doctor</label>
+                            <div class="row">
+                                <label class="form-label">Booking Type <span class="text-danger">*</span></label>
+                                <select class="form-control doctor-name select2input">
+                                    <option value="">Select booking type</option>
+                                    <option value="CR">Single Session</option>
+                                    <option value="AL">6 Session Package</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">Appointment Date <span class="text-danger">*</span></label>
+                            <input name="email" id="email2" type="date" class="form-control">
+                        </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">Session Time <span class="text-danger">*</span></label>
                             <select class="form-control doctor-name select2input">
-                                <option value="CA">Dr. Calvin Carlo</option>
-                                <option value="CR">Dr. Cristino Murphy</option>
-                                <option value="AL">Dr. Alia Reddy</option>
-                                <option value="TO">Dr. Toni Kovar</option>
-                                <option value="JE">Dr. Jessica McFarlane</option>
-                                <option value="EL">Dr. Elsie Sherman</option>
-                                <option value="BE">Dr. Bertha Magers</option>
-                                <option value="LO">Dr. Louis Batey</option>
+                                <option value="">Select session time</option>
+                                <option value="CR">20 minutes</option>
+                                <option value="CR">40 minutes</option>
+                                <option value="CR">60 minutes</option>
                             </select>
                         </div>
                     </div>
                     <!--end col-->
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="mb-3">
-                            <label class="form-label">Your Email <span class="text-danger">*</span></label>
-                            <input name="email" id="email2" type="email" class="form-control"
-                                placeholder="Your email :">
-                        </div>
-                    </div>
-                    <!--end col-->
+                            <label class="form-label"> Available Time Slots <span class="text-danger">*</span></label>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="radioApple" name="radioFruit" value="apple">
+                                <label for="radioApple">4:00 - 4:20</label>
 
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label class="form-label">Your Phone <span class="text-danger">*</span></label>
-                            <input name="phone" id="phone2" type="tel" class="form-control" placeholder="Your Phone :">
-                        </div>
-                    </div>
-                    <!--end col-->
+                                <input type="radio" id="radioBanana" name="radioFruit" value="banana">
+                                <label for="radioBanana">4:20 - 5:00</label>
 
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label class="form-label"> Date : </label>
-                            <input name="date" type="text" class="flatpickr flatpickr-input form-control"
-                                id="checkin-date">
-                        </div>
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label class="form-label" for="input-time">Time : </label>
-                            <input name="time" type="text" class="form-control timepicker" id="input-time"
-                                placeholder="03:30 PM">
-                        </div>
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-lg-12">
-                        <div class="mb-3">
-                            <label class="form-label">Comments <span class="text-danger">*</span></label>
-                            <textarea name="comments" id="comments2" rows="4" class="form-control"
-                                placeholder="Your Message :"></textarea>
+                                <input type="radio" id="radioOrange" name="radioFruit" value="orange">
+                                <label for="radioOrange">5:00 - 5:20</label>
+                            </div>
                         </div>
                     </div>
                     <!--end col-->

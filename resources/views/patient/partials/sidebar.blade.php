@@ -1,4 +1,4 @@
-<div class="col-xl-2 col-lg-4 col-md-5 col-12 mb-4">
+<div class="col-xl-2 col-lg-4 col-md-5 col-12 mb-4" style="z-index: 9999">
     <div class="rounded shadow overflow-hidden sticky-bar">
         <div class="page-wrapper chiller-theme toggled">
             <nav id="sidebar" class="sidebar-wrapper">

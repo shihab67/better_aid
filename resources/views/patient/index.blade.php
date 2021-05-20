@@ -115,7 +115,7 @@
             </div>
             <div class="mt-4">
                 <b>Review</b> <br>
-                <textarea name="" id="" rows="7"></textarea>
+                <textarea name="" id="" rows="7" class="form-control"></textarea>
             </div>
         </div>
     </div>

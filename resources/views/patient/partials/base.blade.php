@@ -26,7 +26,16 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/line.css') }}">
     <!-- Css -->
     <link href="{{ asset('frontend/css/style.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('frontend/css/simplebar.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('frontend/css/sidebar.min.css') }}" rel="stylesheet" type="text/css" />
+    <style>
+        @media only screen and (min-width:767px) {
+            .display-none {
+                display: none;
+            }
+        }
+       
+    </style>
     @stack('css')
 
 </head>
@@ -74,6 +83,7 @@
 
     <!-- javascript -->
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/simplebar.min.js') }}"></script>
     <!-- SLIDER -->
     <script src="{{ asset('frontend/js/tiny-slider.js') }}"></script>
     <script src="{{ asset('frontend/js/tiny-slider-init.js') }}"></script>
