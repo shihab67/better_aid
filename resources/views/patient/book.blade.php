@@ -18,11 +18,11 @@
 
     .radio-toolbar label {
         display: inline-block;
-        background-color: #ddd;
+        background-color: rgb(57 108 240 / 30%);
         padding: 6px 12px;
         font-family: sans-serif, Arial;
         font-size: 14px;
-        border: 2px solid #444;
+        border: 2px solid  rgb(57 108 240 / 70%);
         border-radius: 90px;
     }
 

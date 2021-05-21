@@ -25,30 +25,40 @@
 
     .tns-controls button {
         padding: 5px 5px;
+        height: 50px;
+        width: 50px;
         margin: -10px;
         outline: none;
         text-decoration: none;
         font-size: 13px;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
-        border-radius: 5px;
+        border-radius: 50%;
         background-color: #2260f1 !important;
         border: 1px solid #2260f1 !important;
         color: transparent;
-        box-shadow: 0 3px 5px 0 rgb(57 108 240 / 80%);
         opacity: 0.8;
+    }
+    .tns-controls button:hover{
+        box-shadow: 0 3px 5px 0 rgb(57 108 240 / 80%);
     }
     .tns-controls button:nth-child(1)::before{
         content: '\00AB';
         color: #fff;
-        font-size: 22px;
+        font-size: 25px;
         font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .tns-controls button:nth-child(2)::after{
+    .tns-controls button:nth-child(2)::before{
         content: '\00BB';
         color: #fff;
-        font-size: 22px;
+        font-size: 25px;
         font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -234,7 +244,7 @@
 </div>
 
 <div class="row mt-4">
-    <div class="col-xl-3 col--6 col-lg-6">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -281,7 +291,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-xl-3 col--6 col-lg-6">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -328,7 +338,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-xl-3 col--6 col-lg-6">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -375,7 +385,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-xl-3 col--6 col-lg-6">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">

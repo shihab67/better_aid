@@ -33,7 +33,7 @@ if(document.getElementsByClassName('slider-range-four').length > 0) {
         gutter: 24,
         responsive: {
             992: {
-                items: 4
+                items: 3
             },
 
             767: {

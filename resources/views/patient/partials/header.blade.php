@@ -1,11 +1,11 @@
 <!-- Navbar STart -->
-<header id="topnav" class="defaultscroll sticky">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+<header id="topnav" class="defaultscroll sticky" style="z-index: 1000">
+    <div class="container-fluid d-flex justify-content-between align-items-center header">
         <!-- Logo container-->
         <div class="d-flex justify-content-between align-items-center">
-            <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-2 display-none" href="#" style="margin-right: 1.5rem;">
+            <!-- <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-2 display-none" href="#" style="margin-right: 1.5rem;">
                 <i class="uil uil-bars"></i>
-            </a>
+            </a> -->
             <a class="logo" href="/">
                 <img src="{{ asset('frontend/images/logo-dark.png') }}" height="22" alt="">
             </a>

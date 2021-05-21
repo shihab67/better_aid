@@ -34,7 +34,11 @@
                 display: none;
             }
         }
-       
+        @media only screen and (min-width:320px) {
+            .header{
+                padding-right: 0;
+            }
+        }
     </style>
     @stack('css')
 
