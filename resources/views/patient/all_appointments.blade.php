@@ -99,7 +99,7 @@
                             </div>
                             <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; margin-right: 2rem;">
+                                    style="width: 75px; height: 75px; margin-right: 2rem;">
                                 <div>
                                     <p>Doctor Name: John Nonny</p>
                                     <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
@@ -142,7 +142,7 @@
                             </div>
                             <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; margin-right: 2rem;">
+                                    style="width: 75px; height: 75px; margin-right: 2rem;">
                                 <div>
                                     <p>Doctor Name: John Nonny</p>
                                     <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
@@ -185,7 +185,7 @@
                             </div>
                             <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; margin-right: 2rem;">
+                                    style="width: 75px; height: 75px; margin-right: 2rem;">
                                 <div>
                                     <p>Doctor Name: John Nonny</p>
                                     <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
@@ -228,7 +228,7 @@
                             </div>
                             <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; margin-right: 2rem;">
+                                    style="width: 75px; height: 75px; margin-right: 2rem;">
                                 <div>
                                     <p>Doctor Name: John Nonny</p>
                                     <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
@@ -261,7 +261,7 @@
                 <a href="">View All</a>
             </div>
 
-            <table class="table">
+            <table class="table table-responsive">
                 <thead>
                     <tr>
                         <th scope="col" class="text-center">ID</th>

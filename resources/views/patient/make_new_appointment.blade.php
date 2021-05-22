@@ -244,7 +244,7 @@
 </div>
 
 <div class="row mt-4">
-    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
+    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -291,7 +291,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
+    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -338,7 +338,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
+    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -385,7 +385,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
+    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">

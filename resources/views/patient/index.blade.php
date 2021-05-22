@@ -21,7 +21,7 @@
 @endpush
 @section('content')
 <div class="row">
-    <div class="col-xl-3 col-lg-12">
+    <div class="col-xl-3 col-lg-12 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid patient-img" alt="">
@@ -62,7 +62,7 @@
     </div>
     <!--end col-->
 
-    <div class="col-xl-6 col-lg-12">
+    <div class="col-xl-6 col-lg-12 mb-4">
         <div class="card shadow border-0 p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h6 class="align-items-center mb-0">Up Coming Appointment</h6>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="d-flex mt-2">
                         <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                            style="width: 75px; margin-right: 2rem;">
+                            style="width: 75px; height: 75px; margin-right: 2rem;">
                         <div>
                             <p>Doctor Name: John Nonny</p>
                             <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
@@ -111,7 +111,7 @@
     </div>
     <!--end col-->
 
-    <div class="col-xl-3 col-lg-12">
+    <div class="col-xl-3 col-lg-12 mb-4">
         <div class="card shadow border-0 p-4">
             <h6 class="align-items-center mb-0">Rate your doctor</h6>
             <div class="d-flex justify-content-between mt-4">

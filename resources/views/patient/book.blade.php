@@ -60,8 +60,8 @@
             <div class="tab-content mt-2" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-overview" role="tabpanel"
                     aria-labelledby="overview-tab">
-                    <div class="d-flex mt-3 justify-content-between p-4 doctor row">
-                        <div class="d-flex col-md-12 col-sm-12 col-lg-12 col-xl-3 mt-4 flex-column">
+                    <div class="d-flex justify-content-between p-4 doctor row">
+                        <div class="d-flex col-md-12 col-sm-12 col-lg-12 col-xl-3 flex-column">
                             <div class="row">
                                 <div class="col-md-12">
                                     <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
@@ -307,7 +307,7 @@
                     <div class="col-lg-12">
                         <div class="mb-3">
                             <label class="form-label">Patient Name <span class="text-danger">*</span></label>
-                            <input name="name" id="name2" type="text" class="form-control">
+                            <input name="patient_name" id="patient_name" type="text" class="form-control">
                         </div>
                     </div>
                     <!--end col-->
@@ -316,7 +316,7 @@
                         <div class="mb-3">
                             <label class="form-label">Reason For Appointment (Summary) <span
                                     class="text-danger">*</span></label>
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
+                            <textarea name="reason_for_appointment" id="reason_for_appointment" rows="10" class="form-control"></textarea>
                         </div>
                     </div>
                     <!--end col-->
@@ -325,7 +325,7 @@
                         <div class="mb-3">
                             <div class="row">
                                 <label class="form-label">Booking Type <span class="text-danger">*</span></label>
-                                <select class="form-control doctor-name select2input">
+                                <select class="form-control doctor-name select2input" name="booing_type" id="booking_type">
                                     <option value="">Select booking type</option>
                                     <option value="CR">Single Session</option>
                                     <option value="AL">6 Session Package</option>
@@ -338,7 +338,7 @@
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label">Appointment Date <span class="text-danger">*</span></label>
-                            <input name="email" id="email2" type="date" class="form-control">
+                            <input name="appointment_date" id="appointment_date" type="date" class="form-control">
                         </div>
                     </div>
                     <!--end col-->
@@ -346,7 +346,7 @@
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label">Session Time <span class="text-danger">*</span></label>
-                            <select class="form-control doctor-name select2input">
+                            <select class="form-control doctor-name select2input" name="session_time" id="session_time">
                                 <option value="">Select session time</option>
                                 <option value="CR">20 minutes</option>
                                 <option value="CR">40 minutes</option>
@@ -360,13 +360,13 @@
                         <div class="mb-3">
                             <label class="form-label"> Available Time Slots <span class="text-danger">*</span></label>
                             <div class="radio-toolbar">
-                                <input type="radio" id="radioApple" name="radioFruit" value="apple">
+                                <input type="radio" id="radioApple" name="available_time_slot" value="apple">
                                 <label for="radioApple">4:00 - 4:20</label>
 
-                                <input type="radio" id="radioBanana" name="radioFruit" value="banana">
+                                <input type="radio" id="radioBanana" name="available_time_slot" value="banana">
                                 <label for="radioBanana">4:20 - 5:00</label>
 
-                                <input type="radio" id="radioOrange" name="radioFruit" value="orange">
+                                <input type="radio" id="radioOrange" name="available_time_slot" value="orange">
                                 <label for="radioOrange">5:00 - 5:20</label>
                             </div>
                         </div>
