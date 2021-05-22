@@ -26,10 +26,8 @@
     }
 
     .tns-controls button {
-        padding: 5px 5px;
-        height: 50px;
-        width: 50px;
-        margin: -10px;
+        height: 25px;
+        width: 25px;
         outline: none;
         text-decoration: none;
         font-size: 13px;
@@ -49,7 +47,6 @@
     .tns-controls button:nth-child(1)::before {
         content: '\00AB';
         color: #fff;
-        font-size: 25px;
         font-weight: bold;
         display: flex;
         justify-content: center;
@@ -59,7 +56,6 @@
     .tns-controls button:nth-child(2)::before {
         content: '\00BB';
         color: #fff;
-        font-size: 25px;
         font-weight: bold;
         display: flex;
         justify-content: center;
@@ -79,11 +75,11 @@
                 <div class="col-xl-6 col-lg-6 mt-3">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
-                            <div class="d-flex justify-content-around">
-                                <p class="m-0">Session# abc123</p>
+                            <div class="justify-content-around align-items-center">
+                                <b class="m-0">Session</b> <br> <small>#abc123</small>
                             </div>
-                            <div>
-                                <span class="badge badge-pill badge-primary badge-sm">Offline</span>
+                            <div class="align-items-center">
+                                <span class="badge badge-pill badge-primary badge-lg" style="float: right;">Offline</span> <br>
                                 <span>Single Session</span>
                             </div>
                         </div>
@@ -118,14 +114,15 @@
                     </div>
                 </div>
                 <!--end col-->
+                @for ($i = 0; $i < 4; $i++)
                 <div class="col-xl-6 col-lg-6 mt-3">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
-                            <div class="d-flex justify-content-around">
-                                <p class="m-0">Session# abc123</p>
+                            <div class="justify-content-around align-items-center">
+                                <b class="m-0">Single Session</b> <br> <small>#abc123</small>
                             </div>
-                            <div>
-                                <span class="badge badge-pill badge-primary badge-sm">Offline</span>
+                            <div class="align-items-center">
+                                <span class="badge badge-pill badge-primary badge-lg" style="float: right;">Offline</span> <br>
                                 <span>Session 05</span>
                             </div>
                         </div>
@@ -161,92 +158,7 @@
                     </div>
                 </div>
                 <!--end col-->
-                <div class="col-xl-6 col-lg-6 mt-3">
-                    <div class="card">
-                        <div class="card-header d-flex justify-content-between">
-                            <div class="d-flex justify-content-around">
-                                <p class="m-0">Session# abc123</p>
-                            </div>
-                            <div>
-                                <span class="badge badge-pill badge-primary badge-sm">Offline</span>
-                                <span>Session 05</span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <h6>5:45 PM</h6>
-                                    <span>5 Aug, 2021</span>
-                                </div>
-                                <div class="d-flex justify-content-around">
-                                    <i class="mdi mdi-clock icons mr-3 timer"></i> <span
-                                        class="text-muted timer">15:30:39</span>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2">
-                                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; height: 75px; margin-right: 2rem;">
-                                <div>
-                                    <p>Doctor Name: John Nonny</p>
-                                    <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
-                                            class="badge badge-pill badge-primary">Depression</span></p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center mt-4">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam debitis vel facilis
-                                    inventore sit unde iste officia exercitationem ipsam qui.</p>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center mt-2">
-                                <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
-                                <a href="#" type="button" class="btn btn-danger m-2">Cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-xl-6 col-lg-6 mt-3">
-                    <div class="card">
-                        <div class="card-header d-flex justify-content-between">
-                            <div class="d-flex justify-content-around">
-                                <p class="m-0">Session# abc123</p>
-                            </div>
-                            <div>
-                                <span class="badge badge-pill badge-primary badge-sm">Offline</span>
-                                <span>Session 05</span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <h6>5:45 PM</h6>
-                                    <span>5 Aug, 2021</span>
-                                </div>
-                                <div class="d-flex justify-content-around">
-                                    <i class="mdi mdi-clock icons mr-3 timer"></i> <span
-                                        class="text-muted timer">15:30:39</span>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2">
-                                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px; height: 75px; margin-right: 2rem;">
-                                <div>
-                                    <p>Doctor Name: John Nonny</p>
-                                    <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
-                                            class="badge badge-pill badge-primary">Depression</span></p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center mt-4">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, labore excepturi
-                                    saepe pariatur doloremque hic aspernatur corporis repellendus voluptates culpa!</p>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center mt-2">
-                                <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
-                                <a href="#" type="button" class="btn btn-danger m-2">Cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
+                @endfor
             </div>
         </div>
     </div>
@@ -261,7 +173,7 @@
                 <a href="">View All</a>
             </div>
 
-            <table class="table table-responsive">
+            <table class="table">
                 <thead>
                     <tr>
                         <th scope="col" class="text-center">ID</th>

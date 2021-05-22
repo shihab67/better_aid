@@ -24,9 +24,9 @@
     }
 
     .tns-controls button {
-        padding: 5px 5px;
-        height: 50px;
-        width: 50px;
+      
+        height: 25px;
+        width: 25px;
         margin: -10px;
         outline: none;
         text-decoration: none;
@@ -45,7 +45,6 @@
     .tns-controls button:nth-child(1)::before{
         content: '\00AB';
         color: #fff;
-        font-size: 25px;
         font-weight: bold;
         display: flex;
         justify-content: center;
@@ -54,7 +53,6 @@
     .tns-controls button:nth-child(2)::before{
         content: '\00BB';
         color: #fff;
-        font-size: 25px;
         font-weight: bold;
         display: flex;
         justify-content: center;
@@ -67,10 +65,7 @@
     }
 
     @media only screen and (min-width:767px) {
-        .team {
-            height: 600px;
-            width: 300px;
-        }
+       
     }
 
     .tns-controls {
@@ -214,16 +209,16 @@
     <div class="col-xl-12 col-lg-12 col-sm-12">
         <div class="card border-0 shadow rounded">
             <div class="row p-4">
-                <div class="col-xl-3 col-lg-6 mt-2">
-                    <select class="form-select w-auto" aria-label="Default select example">
+                <div class="col-xl-2 col-lg-6 mt-2">
+                    <select class="form-select w-100" aria-label="Default select example">
                         <option selected>Select Option 1</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <div class="col-xl-3 col-lg-6 mt-2">
-                    <select class="form-select w-auto" aria-label="Default select example">
+                <div class="col-xl-2 col-lg-6 mt-2">
+                    <select class="form-select w-100" aria-label="Default select example">
                         <option selected>Select Option 2</option>
                         <option value="1">Online</option>
                         <option value="2">Offline</option>
@@ -233,6 +228,7 @@
                     <label for="customRange1">Price Range</label>
                     <input type="range" class="form-range" id="customRange1">
                 </div>
+                <div class="col-xl-2 col-lg-6 mt-2"></div>
                 <div class="col-xl-3 col-lg-6 mt-2">
                     <form action="">
                         <input type="text" name="" id="" placeholder="Search..." class="form-control">
@@ -244,7 +240,8 @@
 </div>
 
 <div class="row mt-4">
-    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
+    @for ($i = 0; $i < 6; $i++)
+    <div class="col-md-6 col-lg-5 col-xl-2 col-sm-12 col-12 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -291,147 +288,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
-        <div class="card team border-0 rounded shadow overflow-hidden">
-            <div class="team-person position-relative overflow-hidden">
-                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
-                <ul class="list-unstyled team-like">
-                    <li><a href="#" class="badge badge-pill badge-warning">New Doctor</a></li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <ul class="list-unstyled mt-1 mb-0">
-                    <li class="d-flex justify-content-center">
-                        <ul class="list-unstyled mb-0">
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                        </ul>
-                    </li>
-                    <li class="d-flex justify-content-center">
-                        <small class="text-muted ms-2">John Nonny</small>
-                    </li>
-                    <li class="d-flex justify-content-center">
-                        <small class="text-muted ms-2">FCPS, MBBS</small>
-                    </li>
-                    <li>
-                        <div class="d-flex">
-                            <small class="badge badge-pill badge-primary m-1">Divorce</small>
-                            <small class="badge badge-pill badge-primary m-1">Depression</small>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-around">
-                        <small class="ms-2 font-weight-bold">Experience:</small>
-                        <small class="text-muted ms-2">20 Years</small>
-                    </li>
-                </ul>
-                <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item">
-                        <h5>500 BDT/Session</h5>
-                    </li> <br>
-                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-md">Book</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--end col-->
-    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
-        <div class="card team border-0 rounded shadow overflow-hidden">
-            <div class="team-person position-relative overflow-hidden">
-                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
-                <ul class="list-unstyled team-like">
-                    <li><a href="#" class="badge badge-pill badge-warning">New Doctor</a></li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <ul class="list-unstyled mt-1 mb-0">
-                    <li class="d-flex justify-content-center">
-                        <ul class="list-unstyled mb-0">
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                        </ul>
-                    </li>
-                    <li class="d-flex justify-content-center">
-                        <small class="text-muted ms-2">John Nonny</small>
-                    </li>
-                    <li class="d-flex justify-content-center">
-                        <small class="text-muted ms-2">FCPS, MBBS</small>
-                    </li>
-                    <li>
-                        <div class="d-flex">
-                            <small class="badge badge-pill badge-primary m-1">Divorce</small>
-                            <small class="badge badge-pill badge-primary m-1">Depression</small>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-around">
-                        <small class="ms-2 font-weight-bold">Experience:</small>
-                        <small class="text-muted ms-2">20 Years</small>
-                    </li>
-                </ul>
-                <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item">
-                        <h5>500 BDT/Session</h5>
-                    </li> <br>
-                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-md">Book</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--end col-->
-    <div class="col-md-6 col-lg-5 col-xl-3 col-sm-12 col-12 mb-4">
-        <div class="card team border-0 rounded shadow overflow-hidden">
-            <div class="team-person position-relative overflow-hidden">
-                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
-                <ul class="list-unstyled team-like">
-                    <li><a href="#" class="badge badge-pill badge-warning">New Doctor</a></li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <ul class="list-unstyled mt-1 mb-0">
-                    <li class="d-flex justify-content-center">
-                        <ul class="list-unstyled mb-0">
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                        </ul>
-                    </li>
-                    <li class="d-flex justify-content-center">
-                        <small class="text-muted ms-2">John Nonny</small>
-                    </li>
-                    <li class="d-flex justify-content-center">
-                        <small class="text-muted ms-2">FCPS, MBBS</small>
-                    </li>
-                    <li>
-                        <div class="d-flex">
-                            <small class="badge badge-pill badge-primary m-1">Divorce</small>
-                            <small class="badge badge-pill badge-primary m-1">Depression</small>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-around">
-                        <small class="ms-2 font-weight-bold">Experience:</small>
-                        <small class="text-muted ms-2">20 Years</small>
-                    </li>
-                </ul>
-                <ul class="list-unstyled mt-2 mb-0 text-center">
-                    <li class="list-inline-item">
-                        <h5>500 BDT/Session</h5>
-                    </li> <br>
-                    <li class="list-inline-item"><a href="#" type/book"button" class="btn btn-primary btn-md">Book</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--end col-->
+    @endfor
 </div>
 <!--end row-->
 @endsection

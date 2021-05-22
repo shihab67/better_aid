@@ -70,11 +70,11 @@
             </div>
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <div class="d-flex justify-content-around align-items-center">
-                        <p class="m-0">Session# abc123</p>
+                    <div class="justify-content-around align-items-center">
+                        <b class="m-0">Session</b> <br> <small>#abc123</small>
                     </div>
                     <div class="align-items-center">
-                        <span class="badge badge-pill badge-primary badge-sm">Offline</span>
+                        <span class="badge badge-pill badge-primary badge-lg" style="float: right;">Offline</span> <br>
                         <span>Single Session</span>
                     </div>
                 </div>
