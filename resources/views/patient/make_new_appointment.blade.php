@@ -99,7 +99,7 @@
 @endpush
 @section('content')
 <div class="row">
-    <div class="col-xl-12 col-lg-6">
+    <div class="col-xl-12 col-lg-12 col-sm-12">
         <div class="card shadow border-0 p-4">
             <div class="mb-3">
                 <h6 class="align-items-center mb-0">Find Your Doctor</h6>
@@ -211,7 +211,7 @@
 <!--end row-->
 
 <div class="row mt-4">
-    <div class="col-xl-12 col-lg-6">
+    <div class="col-xl-12 col-lg-12 col-sm-12">
         <div class="card border-0 shadow rounded">
             <div class="row p-4">
                 <div class="col-xl-3 col-lg-6 mt-2">
@@ -244,7 +244,7 @@
 </div>
 
 <div class="row mt-4">
-    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
+    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -291,7 +291,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
+    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -338,7 +338,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
+    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
@@ -385,7 +385,7 @@
         </div>
     </div>
     <!--end col-->
-    <div class="col-sm-4 col-md-4 col-lg-4 col-6 mb-4">
+    <div class="col-sm-6 col-md-12 col-lg-3 col-sm-6 col-6 mb-4">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">

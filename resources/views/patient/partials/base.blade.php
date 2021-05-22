@@ -34,8 +34,9 @@
                 display: none;
             }
         }
+
         @media only screen and (min-width:320px) {
-            .header{
+            .header {
                 padding-right: 0;
             }
         }
@@ -65,7 +66,7 @@
                 @include('patient.partials.sidebar')
                 <!--end col-->
 
-                <div class="col-xl-10 col-lg-8 col-md-7 mt-sm-0">
+                <div class="col-xl-10 col-lg-9 col-md-9 mt-sm-0">
                     @yield('content')
                 </div>
                 <!--end col-->
@@ -86,6 +87,9 @@
     <!-- Back to top -->
 
     <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('frontend/js/simplebar.min.js') }}"></script>
     <!-- SLIDER -->

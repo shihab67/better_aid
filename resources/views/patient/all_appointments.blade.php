@@ -5,9 +5,11 @@
     .timer {
         font-size: 1.5rem;
     }
-    .icons{
-     font-size: 27px;   
+
+    .icons {
+        font-size: 27px;
     }
+
     .tns-controls {
         margin: 0;
         padding: 0;
@@ -22,6 +24,7 @@
         justify-content: space-between;
         z-index: 499;
     }
+
     .tns-controls button {
         padding: 5px 5px;
         height: 50px;
@@ -38,10 +41,12 @@
         color: transparent;
         opacity: 0.8;
     }
-    .tns-controls button:hover{
+
+    .tns-controls button:hover {
         box-shadow: 0 3px 5px 0 rgb(57 108 240 / 80%);
     }
-    .tns-controls button:nth-child(1)::before{
+
+    .tns-controls button:nth-child(1)::before {
         content: '\00AB';
         color: #fff;
         font-size: 25px;
@@ -50,7 +55,8 @@
         justify-content: center;
         align-items: center;
     }
-    .tns-controls button:nth-child(2)::before{
+
+    .tns-controls button:nth-child(2)::before {
         content: '\00BB';
         color: #fff;
         font-size: 25px;
@@ -91,14 +97,18 @@
                                     class="btn btn-primary d-flex justify-content-center align-items-center">Join
                                     Meeting</a>
                             </div>
-                            <div class="d-flex justify-content-between mt-2">
+                            <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
-                                    provident.</p>
+                                    style="width: 75px; margin-right: 2rem;">
+                                <div>
+                                    <p>Doctor Name: John Nonny</p>
+                                    <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
+                                            class="badge badge-pill badge-primary">Depression</span></p>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-center mt-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="d-flex mt-4">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo minima blanditiis
+                                    eum doloribus vel quam quo magni incidunt, ducimus a?</p>
                             </div>
                             <div class="d-flex justify-content-center align-items-center mt-2">
                                 <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
@@ -130,14 +140,18 @@
                                         class="text-muted timer">15:30:39</span>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-2">
+                            <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
-                                    provident.</p>
+                                    style="width: 75px; margin-right: 2rem;">
+                                <div>
+                                    <p>Doctor Name: John Nonny</p>
+                                    <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
+                                            class="badge badge-pill badge-primary">Depression</span></p>
+                                </div>
                             </div>
                             <div class="d-flex justify-content-center mt-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem similique qui
+                                    doloremque, odio illo incidunt deserunt unde iste at sunt?</p>
                             </div>
                             <div class="d-flex justify-content-center align-items-center mt-2">
                                 <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
@@ -169,14 +183,18 @@
                                         class="text-muted timer">15:30:39</span>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-2">
+                            <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
-                                    provident.</p>
+                                    style="width: 75px; margin-right: 2rem;">
+                                <div>
+                                    <p>Doctor Name: John Nonny</p>
+                                    <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
+                                            class="badge badge-pill badge-primary">Depression</span></p>
+                                </div>
                             </div>
                             <div class="d-flex justify-content-center mt-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam debitis vel facilis
+                                    inventore sit unde iste officia exercitationem ipsam qui.</p>
                             </div>
                             <div class="d-flex justify-content-center align-items-center mt-2">
                                 <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
@@ -208,14 +226,18 @@
                                         class="text-muted timer">15:30:39</span>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-2">
+                            <div class="d-flex mt-2">
                                 <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                                    style="width: 75px">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
-                                    provident.</p>
+                                    style="width: 75px; margin-right: 2rem;">
+                                <div>
+                                    <p>Doctor Name: John Nonny</p>
+                                    <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
+                                            class="badge badge-pill badge-primary">Depression</span></p>
+                                </div>
                             </div>
                             <div class="d-flex justify-content-center mt-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, labore excepturi
+                                    saepe pariatur doloremque hic aspernatur corporis repellendus voluptates culpa!</p>
                             </div>
                             <div class="d-flex justify-content-center align-items-center mt-2">
                                 <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
@@ -236,6 +258,7 @@
         <div class="card border-0 shadow rounded">
             <div class="d-flex justify-content-between p-2 border-bottom align-items-center">
                 <h6 class="mb-0">Previous Appointments</h6>
+                <a href="">View All</a>
             </div>
 
             <table class="table">
@@ -259,8 +282,8 @@
                         <td>Premium</td>
                         <td>Cardiac</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
+                                    class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -271,8 +294,8 @@
                         <td>Premium</td>
                         <td>Cardiac</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
+                                    class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -283,8 +306,8 @@
                         <td>Premium</td>
                         <td>Cardiac</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
+                                    class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -295,8 +318,8 @@
                         <td>Premium</td>
                         <td>Cardiac</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
+                                    class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -307,8 +330,8 @@
                         <td>Premium</td>
                         <td>Cardiac</td>
                         <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#view-invoice"><i
+                                    class="uil uil-clipboard-notes icons"></i></a>
                         </td>
                     </tr>
                 </tbody>

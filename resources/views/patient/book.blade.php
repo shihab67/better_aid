@@ -4,9 +4,15 @@
 <style>
     @media only screen and (min-width:767px) {
         .divider {
-            background-color: #000;
+            background-color: rgba(128, 128, 128, 0.658);
             height: 320px;
-            width: 3px;
+            width: 2px;
+        }
+    }
+
+    @media only screen and (max-width:1200px) {
+        .divider {
+            display: none;
         }
     }
 
@@ -22,7 +28,7 @@
         padding: 6px 12px;
         font-family: sans-serif, Arial;
         font-size: 14px;
-        border: 2px solid  rgb(57 108 240 / 70%);
+        border: 2px solid rgb(57 108 240 / 70%);
         border-radius: 90px;
     }
 
@@ -40,6 +46,10 @@
         border-color: #215AEE;
         color: #fff;
     }
+
+    #tns1-mw {
+        margin-right: 2rem;
+    }
 </style>
 @endpush
 @section('content')
@@ -51,16 +61,29 @@
                 <div class="tab-pane fade show active" id="pills-overview" role="tabpanel"
                     aria-labelledby="overview-tab">
                     <div class="d-flex mt-3 justify-content-between p-4 doctor row">
-                        <div class="d-flex col-md-4 col-sm-12 col-lg-4 mt-4">
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                style="width: 150px; height: 150px;">
-                            <div>
-                                <h5 class="mb-1">Dr. John Nonny</h5>
-                                <a href="#" class="text-primary">Gynecologist</a>, <a href="#"
-                                    class="text-primary">Ph.D</a>
+                        <div class="d-flex col-md-12 col-sm-12 col-lg-12 col-xl-3 mt-4 flex-column">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
+                                        style="width: 150px; height: 150px;">
+                                    <div>
+                                        <h5 class="mb-1">Dr. John Nonny</h5>
+                                        <a href="#" class="text-primary">Gynecologist</a>, <a href="#"
+                                            class="text-primary">Ph.D</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="co-md-12">
+                                    <p class="mt-4" style="text-align:justify">A gynecologist is a surgeon who
+                                        specializes in the female reproductive system, which includes the cervix,
+                                        fallopian tubes, ovaries, uterus, vagina and
+                                        vulva.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0 p-3 rounded shadow col-md-3 col-sm-12 col-lg-3 mt-4">
+                        <div class="card border-0 p-3 rounded shadow col-md-12 col-sm-12 col-lg-12 col-xl-3 mt-4">
                             <h6>Time Table</h6>
                             <ul class="list-unstyled mb-0">
                                 <li class="d-flex justify-content-between my-1">
@@ -108,7 +131,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card border-0 p-3 rounded shadow col-md-3 col-sm-12 col-lg-3 mt-4 ml-4">
+                        <div class="card border-0 p-3 rounded shadow col-md-12 col-sm-12 col-lg-12 col-xl-3 mt-4 ml-4">
                             <h6>Price Chart</h6>
                             <ul class="list-unstyled mb-0">
                                 <li class="d-flex justify-content-between my-1">
@@ -129,19 +152,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div>
-
-                    </div>
-                    <p class="text-muted mt-4">A gynecologist is a surgeon who specializes in the female reproductive
-                        system, which includes the cervix, fallopian tubes, ovaries, uterus, vagina and vulva. Menstrual
-                        problems, contraception, sexuality, menopause and infertility issues are diagnosed and treated
-                        by a gynecologist; most gynecologists also provide prenatal care, and some provide primary care.
-                    </p>
-
-                    <h6>Specialties: </h6>
 
                     <div class="row justify-content-around">
-                        <div class="col-md-5">
+                        <div class="col-md-12 col-sm-12 col-lg-12 col-xl-5">
+                            <h6>Specialties: </h6>
+
                             <ul class="list-unstyled mt-4">
                                 <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Women's health
                                     services</li>
@@ -152,11 +167,12 @@
                                 <li class="mt-1"><i class="uil uil-arrow-right text-primary"></i> Conclusion</li>
                             </ul>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xl-2">
                             <div class="divider"></div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="client-review-slider">
+                        <div class="col-md-12 col-sm-12 col-lg-12 col-xl-5">
+                            <h6>Patient Reviews: </h6>
+                            <div class="client-review-slider mt-4">
                                 <div class="tiny-slide text-center">
                                     <p class="text-muted h6 fw-normal fst-italic">" It seems that only fragments of the
                                         original text remain in the Lorem Ipsum texts used today. The most well-known
@@ -305,7 +321,7 @@
                     </div>
                     <!--end col-->
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="mb-3">
                             <div class="row">
                                 <label class="form-label">Booking Type <span class="text-danger">*</span></label>
@@ -319,7 +335,7 @@
                     </div>
                     <!--end col-->
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label">Appointment Date <span class="text-danger">*</span></label>
                             <input name="email" id="email2" type="date" class="form-control">
@@ -327,7 +343,7 @@
                     </div>
                     <!--end col-->
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label">Session Time <span class="text-danger">*</span></label>
                             <select class="form-control doctor-name select2input">

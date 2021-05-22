@@ -79,16 +79,16 @@
                 <li><a href="/" class="sub-menu-item">Dashboard</a></li>
 
                 <li class="has-submenu parent-menu-item">
-                    <a href="javascript:void(0)">My Appointments</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)">Appointments</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li><a href="/all-appointments" class="sub-menu-item">All Appointments</a></li>
                         <li><a href="/make-new-appointment" class="sub-menu-item">Make New Appointment</a></li>
                     </ul>
                 </li>
 
-                <li><a href="/my-payments" class="sub-menu-item">My Payments</a></li>
+                <li><a href="/my-payments" class="sub-menu-item">Payments</a></li>
 
-                <li><a href="/my-prescriptions" class="sub-menu-item">My Prescriptions</a></li>
+                <li><a href="/my-prescriptions" class="sub-menu-item">Prescriptions</a></li>
 
             </ul>
             <!--end navigation menu-->

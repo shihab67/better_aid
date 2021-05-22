@@ -5,20 +5,32 @@
     .icons {
         font-size: 27px;
     }
+    @media only screen and (min-width:1281px) {
+        .patient-img {
+            height: 290px;
+            width: 100%;
+        }
+    }
+    @media (max-width:801px) { 
+        .patient-img {
+            height: 350px;
+            width: 100%;
+        } 
+    }
 </style>
 @endpush
 @section('content')
 <div class="row">
-    <div class="col-xl-3 col-lg-6">
+    <div class="col-xl-3 col-lg-12">
         <div class="card team border-0 rounded shadow overflow-hidden">
             <div class="team-person position-relative overflow-hidden">
-                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/images/doctors/01.jpg') }}" class="img-fluid patient-img" alt="">
                 <ul class="list-unstyled team-like">
                     <li><a href="#" class="badge badge-pill badge-success">Premium</a></li>
                 </ul>
             </div>
             <div class="card-body">
-                <ul class="list-unstyled mt-1 mb-0">
+                <ul class="list-unstyled mb-0">
                     <li class="d-flex justify-content-between">
                         <small class="ms-2 font-weight-bold">Name:</small>
                         <small class="text-muted ms-2">Jorina Khatun</small>
@@ -40,7 +52,7 @@
                         <small class="text-muted ms-2">O-ve</small>
                     </li>
                 </ul>
-                <ul class="list-unstyled mt-2 mb-0 text-center">
+                <ul class="list-unstyled mb-0 text-center">
                     <li class="list-inline-item"><a href="#" type="button" class="btn btn-primary btn-sm">Update
                             Profile</a>
                     </li>
@@ -50,7 +62,7 @@
     </div>
     <!--end col-->
 
-    <div class="col-xl-6 col-lg-6">
+    <div class="col-xl-6 col-lg-12">
         <div class="card shadow border-0 p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h6 class="align-items-center mb-0">Up Coming Appointment</h6>
@@ -76,14 +88,18 @@
                             class="btn btn-primary d-flex justify-content-center align-items-center">Join
                             Meeting</a>
                     </div>
-                    <div class="d-flex justify-content-between mt-2">
+                    <div class="d-flex mt-2">
                         <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt="" class="rounded-circle"
-                            style="width: 75px">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
-                            provident.</p>
+                            style="width: 75px; margin-right: 2rem;">
+                        <div>
+                            <p>Doctor Name: John Nonny</p>
+                            <p>speciality: <span class="badge badge-pill badge-primary">Divorce</span> <span
+                                    class="badge badge-pill badge-primary">Depression</span></p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center mt-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="d-flex mt-4">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam neque quisquam eius quis sunt
+                            blanditiis magni natus dicta tenetur velit.</p>
                     </div>
                     <div class="d-flex justify-content-center mt-2">
                         <a href="#" type="button" class="btn btn-primary m-2">Reschedule</a>
@@ -92,24 +108,10 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12 col-lg-12">
-                <div class="card border-0 shadow rounded mt-4">
-                    <div class="p-4">
-                        <h6 class="mb-0">Contact Us</h6>
-                    </div>
-                    <div class="mb-4 d-flex justify-content-around align-items-center">
-                        <a href=""><i class="fa fa-phone icons"></i></a>
-                        <a href=""><i class="fa fa-envelope icons"></i></a>
-                        <a href=""><i class="fab fa-whatsapp-square icons"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!--end col-->
 
-    <div class="col-xl-3 col-lg-6">
+    <div class="col-xl-3 col-lg-12">
         <div class="card shadow border-0 p-4">
             <h6 class="align-items-center mb-0">Rate your doctor</h6>
             <div class="d-flex justify-content-between mt-4">
@@ -132,21 +134,36 @@
                 <textarea name="" id="" rows="7" class="form-control"></textarea>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12 col-lg-12">
-                <div class="card border-0 shadow rounded mt-4">
-                    <div class="p-4">
-                        <div class="client-review-slider">
-                            <p>Ad for coupons/offers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!--end col-->
 </div>
 <!--end row-->
+<div class="row">
+    <div class="col-xl-6 col-lg-12">
+        <div class="card border-0 shadow rounded mt-4 mb-4">
+            <div class="p-4 row justify-content-center">
+                <div class=" d-flex justify-content-center align-items-center col-xl-4 col-lg-12 mb-3">
+                    <i class="fa fa-phone icons text-primary" style="margin-right: 6px;"></i> <a href="">018XXXXXXXX</a>
+                </div>
+                <div class=" d-flex justify-content-center align-items-center col-xl-4 col-lg-12 mb-3">
+                    <i class="fa fa-envelope icons text-primary" style="margin-right: 6px;"></i> <a href="">abc@betteraid.com</a>
+                </div>
+                <div class=" d-flex justify-content-center align-items-center col-xl-4 col-lg-12 mb-3">
+                    <i class="fab fa-whatsapp-square icons text-primary" style="margin-right: 6px;"></i> <a href="">wp.com/betteraid</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6 col-lg-12">
+        <div class="card border-0 shadow rounded mt-4">
+            <div class="p-4">
+                <div class="client-review-slider">
+                    <p>Ad for coupons/offers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-xl-6 col-lg-6 mt-4">
