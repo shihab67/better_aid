@@ -61,13 +61,13 @@
     </div>
     <!-- Loader -->
 
-    @include('patient.partials.header')
+    @include('doctor.partials.header')
 
     <!-- Start Hero -->
     <section class="bg-dashboard">
         <div class="container-fluid">
             <div class="row">
-                @include('patient.partials.sidebar')
+                @include('doctor.partials.sidebar')
                 <!--end col-->
 
                 <div class="col-xl-10 col-lg-9 col-md-9 mt-sm-0">
@@ -82,7 +82,7 @@
     <!--end section-->
     <!-- End Hero -->
 
-    @include('patient.partials.footer')
+    @include('doctor.partials.footer')
     <!-- End -->
 
     <!-- Back to top -->

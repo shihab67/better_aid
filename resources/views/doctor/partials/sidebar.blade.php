@@ -4,21 +4,24 @@
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
                     <ul class="sidebar-menu pt-3">
-                        <li><a href="/patient"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
+                        <li><a href="/doctor"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
 
                         <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="fas fa-calendar-check me-2 d-inline-block"></i>Appointments</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                                    <li><a href="/all-appointments">All Appointments</a></li>
-                                    <li><a href="/make-new-appointment">Make New Appointment</a></li>
+                                    <li><a href="/todays-appointments">Today's Appointments</a></li>
+                                    <li><a href="/upcoming-appointments">Upcoming Appointments</a></li>
+                                    <li><a href="/previous-appointments">Previous Appointments</a></li>
                                 </ul>
                             </div>
                         </li>
 
-                        <li><a href="/my-payments"><i class="fas fa-money-bill-wave me-2 d-inline-block"></i>Payments</a></li>
+                        <li><a href="/payment-history"><i class="fas fa-money-bill-wave me-2 d-inline-block"></i>Payment History</a></li>
                         
-                        <li><a href="/my-prescriptions"><i class="fas fa-prescription me-2 d-inline-block"></i>Prescriptions</a></li>
+                        <li><a href="/patient-list"><i class="fas fa-user-injured me-2 d-inline-block"></i>Patient List</a></li>
+
+                        <li><a href="/settings"><i class="fas fa-cog me-2 d-inline-block"></i>Settings</a></li>
 
                     </ul>
                     <!-- sidebar-menu  -->

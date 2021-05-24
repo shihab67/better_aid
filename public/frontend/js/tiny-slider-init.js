@@ -64,8 +64,11 @@ if(document.getElementsByClassName('slider-range-three').length > 0) {
         speed: 400,
         gutter: 24,
         responsive: {
-            992: {
+            1025: {
                 items: 3
+            },
+            992: {
+                items: 2
             },
 
             767: {

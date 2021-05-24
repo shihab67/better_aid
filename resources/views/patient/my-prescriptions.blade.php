@@ -26,6 +26,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @for ($i = 0; $i < 6; $i++)
                     <tr>
                         <td class="text-center">abc123</td>
                         <td>
@@ -36,61 +37,10 @@
                         <td class="text-center">
                             <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
+                                    class="fas fa-file-prescription icons"></i></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
-                        </td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
-                        </td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
-                        </td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>
-                            <img src="{{ asset('frontend/images/doctors/01.jpg') }}" alt=""
-                                class="rounded-circle" style="width: 30px; height: 30px;">
-                        </td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
+                    @endfor
                 </tbody>
             </table>
         </div>

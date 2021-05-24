@@ -25,51 +25,17 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @for ($i = 0; $i < 6; $i++)
                     <tr>
                         <td class="text-center">abc123</td>
                         <td>11 May, 2021</td>
                         <td class="text-center">
                             <a href="#" data-bs-toggle="modal"
                                 data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
+                                    class="fas fa-file-invoice-dollar icons"></i></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">abc123</td>
-                        <td>11 May, 2021</td>
-                        <td class="text-center">
-                            <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#view-invoice"><i
-                                    class="uil uil-clipboard-notes icons"></i></a>
-                        </td>
-                    </tr>
+                    @endfor
                 </tbody>
             </table>
         </div>

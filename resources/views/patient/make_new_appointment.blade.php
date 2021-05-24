@@ -224,12 +224,18 @@
                         <option value="2">Offline</option>
                     </select>
                 </div>
-                <div class="col-xl-3 col-lg-6 mt-2">
-                    <label for="customRange1">Price Range</label>
-                    <input type="range" class="form-range" id="customRange1">
+                <div class="col-xl-3 col-lg-12 mt-2">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 pb-2">
+                            <input type="text" name="" id="" placeholder="Min. Price" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <input type="text" name="" id="" placeholder="Max. Price" class="form-control">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 mt-2"></div>
-                <div class="col-xl-3 col-lg-6 mt-2">
+                <div class="col-xl-2 col-lg-12 mt-2"></div>
+                <div class="col-xl-3 col-lg-12 mt-2">
                     <form action="">
                         <input type="text" name="" id="" placeholder="Search..." class="form-control">
                     </form>
