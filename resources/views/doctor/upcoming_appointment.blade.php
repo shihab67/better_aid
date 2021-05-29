@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
     integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0-alpha.2/jquery.mobile-1.4.0-alpha.2.min.css" />
 <style>
     .timer {
         font-size: 1rem;
@@ -90,7 +91,113 @@
             </div>
             <div class="card p-4 pb-2">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-12 col-sm-12">
+                    <div class="col-xl-12 col-lg-12 col-sm-12 mt-4">
+                        <div class="card border-0 shadow rounded">
+                            <div class="d-flex justify-content-between p-2 border-bottom align-items-center">
+                                <h6 class="mb-0">Slot 9-12 A.M.</h6>
+                            </div>
+                
+                            <div class="table-responsive-sm">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-center">SL No.</th>
+                                            <th scope="col">Date & Time</th>
+                                            <th scope="col">Patient Name</th>
+                                            <th scope="col" class="text-center">Patient Image</th>
+                                            <th scope="col">Session Duration</th>
+                                            <th scope="col">Package ID</th>
+                                            <th scope="col">Category</th>
+                                            <th scope="col" class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for ($i = 0; $i < 2; $i++) 
+                                        <tr style="vertical-align: baseline">
+                                            <td class="text-center">{{ $i + 1 }}</td>
+                                            <td>11 May, 2021, 10:23 PM</td>
+                                            <td>Jorina Khatun</td>
+                                            <td class="text-center">
+                                                <img src="{{ asset('frontend/images/person.jpg') }}" alt="" class="rounded-circle"
+                                                    style="width: 70px; height: 70px;">
+                                            </td>
+                                            <td>20 minutes</td>
+                                            <td>Premium</td>
+                                            <td>Cardiac</td>
+                                            <td class="text-center">
+                                                <a href="#" title="Accept">
+                                                    <button type="button" class="btn btn-success btn-sm">
+                                                        <i class="fas fa-check"></i>
+                                                    </button>
+                                                </a>
+                                                <a href="#" title="Decline">
+                                                    <button type="button" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        @endfor
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                    <div class="col-xl-12 col-lg-12 mt-4">
+                        <div class="card border-0 shadow rounded">
+                            <div class="d-flex justify-content-between p-2 border-bottom align-items-center">
+                                <h6 class="mb-0">Slot 6-9 P.M.</h6>
+                            </div>
+                
+                            <div class="table-responsive-sm">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-center">SL No.</th>
+                                            <th scope="col">Date & Time</th>
+                                            <th scope="col">Patient Name</th>
+                                            <th scope="col" class="text-center">Patient Image</th>
+                                            <th scope="col">Session Duration</th>
+                                            <th scope="col">Package ID</th>
+                                            <th scope="col">Category</th>
+                                            <th scope="col" class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for ($i = 0; $i < 2; $i++) 
+                                        <tr style="vertical-align: baseline">
+                                            <td class="text-center">{{ $i + 1 }}</td>
+                                            <td>11 May, 2021, 10:23 PM</td>
+                                            <td>Jorina Khatun</td>
+                                            <td class="text-center">
+                                                <img src="{{ asset('frontend/images/person.jpg') }}" alt="" class="rounded-circle"
+                                                    style="width: 70px; height: 70px;">
+                                            </td>
+                                            <td>20 minutes</td>
+                                            <td>Premium</td>
+                                            <td>Cardiac</td>
+                                            <td class="text-center">
+                                                <a href="#" title="Accept">
+                                                    <button type="button" class="btn btn-success btn-sm">
+                                                        <i class="fas fa-check"></i>
+                                                    </button>
+                                                </a>
+                                                <a href="#" title="Decline">
+                                                    <button type="button" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        @endfor
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                    {{-- <div class="col-xl-6 col-lg-12 col-sm-12">
                         <div class="card p-4 pb-0">
                             <h6>Slot: 9-12 A.M.</h6>
                             <ul class="sortable">
@@ -125,8 +232,7 @@
                         <div class="card p-4 pb-0">
                             <h6>Slot: 6-9 P.M.</h6>
                             <ul class="sortable">
-                                @for ($i = 0; $i < 6; $i++) 
-                                <li class="ui-state-default" id="slot2 - {{ $i }}">
+                                @for ($i = 0; $i < 6; $i++) <li class="ui-state-default" id="slot2 - {{ $i }}">
                                     <div class="card rounded">
                                         <div class="card-body p-2">
                                             <div class="row">
@@ -147,17 +253,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                @endfor
+                                    </li>
+                                    @endfor
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
-                </di>
                 <!--end col-->
-                <div class="p-4 text-center">
-                    <button class="btn btn-primary confirm">Confirm</button>
-                </div>
             </div>
         </div>
     </div>
@@ -171,27 +273,40 @@
                 <a href="">View All</a>
             </div>
 
-            <div class="table-responsive">
+            <div class="table-responsive-sm">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="text-center">ID</th>
+                            <th scope="col" class="text-center">SL No.</th>
                             <th scope="col">Date & Time</th>
                             <th scope="col">Patient Name</th>
+                            <th scope="col" class="text-center">Patient Image</th>
                             <th scope="col">Session Duration</th>
                             <th scope="col">Package ID</th>
                             <th scope="col">Category</th>
+                            <th scope="col" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @for ($i = 0; $i < 6; $i++)
-                        <tr>
-                            <td class="text-center">1</td>
+                        @for ($i = 0; $i < 6; $i++) 
+                        <tr style="vertical-align: baseline">
+                            <td class="text-center">{{ $i + 1 }}</td>
                             <td>11 May, 2021, 10:23 PM</td>
                             <td>Jorina Khatun</td>
+                            <td class="text-center">
+                                <img src="{{ asset('frontend/images/person.jpg') }}" alt="" class="rounded-circle"
+                                    style="width: 70px; height: 70px;">
+                            </td>
                             <td>20 minutes</td>
                             <td>Premium</td>
                             <td>Cardiac</td>
+                            <td class="text-center">
+                                <a href="#" title="View">
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </a>
+                            </td>
                         </tr>
                         @endfor
                     </tbody>
@@ -204,9 +319,12 @@
 <!--end row-->
 @endsection
 @push('js')
+<script src="http://code.jquery.com/mobile/1.4.0-alpha.2/jquery.mobile-1.4.0-alpha.2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
     integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{-- Jquery Touch --}}
+<script src="{{ asset('frontend/js/jquery.ui.touch-punch.min.js') }}"></script>
 
 <script>
     $( function() {

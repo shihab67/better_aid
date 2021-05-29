@@ -43,8 +43,8 @@ Route::get('/todays-appointments', function () {
 Route::get('/upcoming-appointments', function () {
     return view('doctor.upcoming_appointment');
 });
-Route::get('/previous', function () {
-    return view('doctor.previous');
+Route::get('/previous-appointments', function () {
+    return view('doctor.previous_appointment');
 });
 Route::get('/payment-history', function () {
     return view('doctor.payment_history');
