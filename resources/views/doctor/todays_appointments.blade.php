@@ -112,7 +112,7 @@
                                     doloremque, odio illo incidunt deserunt unde iste at sunt?</p>
                             </div>
                             <div class="d-flex justify-content-center align-items-center mt-2">
-                                <a href="#" type="button" class="btn btn-primary m-2">Start Meeting</a>
+                                <a href="#" type="button" class="btn btn-primary btn-sm m-2">Start Meeting</a>
                             </div>
                         </div>
                     </div>
@@ -124,16 +124,59 @@
 </div>
 </div>
 <!--end row-->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<div class="row mt-4">
+    <div class="col-xl-12 col-lg-12">
+        <div class="card shadow border-0 p-4">
+            <div class="d-flex justify-content-between mb-3">
+                <h6 class="align-items-center mb-0">Rejected Appointments</h6>
+            </div>
+            <div class="slider-range-four">
+                @for ($i = 0; $i < 4; $i++) <div class="col-xl-6 col-lg-6 col-sm-12 mt-3">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="justify-content-around align-items-center">
+                                <b class="m-0">Single Session</b> <br> <small>#abc123</small>
+                            </div>
+                            <div class="align-items-center">
+                                <span class="badge badge-pill badge-primary badge-lg"
+                                    style="float: right;">Offline</span> <br>
+                                <span>Session 05</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>5:45 PM</h6>
+                                    <span>5 Aug, 2021</span>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <i class="mdi mdi-clock icons mr-3 timer"></i> <span
+                                        class="text-muted timer">15:30:39</span>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <img src="{{ asset('frontend/images/person.jpg') }}" alt="" class="rounded-circle"
+                                    style="width: 75px; height: 75px; margin-right: 2rem;">
+                                <div>
+                                    <p>Patient Name: Jorina Khatun</p>
+                                    <p>Session Duration: 20 minutes</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem similique qui
+                                    doloremque, odio illo incidunt deserunt unde iste at sunt?</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!--end col-->
+            @endfor
+        </div>
+    </div>
+</div>
+</div>
+<!--end row-->
 {{-- <div class="row">
     <div class="col-xl-12 col-lg-12 mt-4">
         <div class="card border-0 shadow rounded">

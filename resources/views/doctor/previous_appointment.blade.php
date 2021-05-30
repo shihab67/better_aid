@@ -20,9 +20,9 @@
                     <thead>
                         <tr>
                             <th scope="col" class="text-center">SL No.</th>
-                            <th scope="col">Date & Time</th>
                             <th scope="col">Patient Name</th>
                             <th scope="col" class="text-center">Patient Image</th>
+                            <th scope="col">Date & Time</th>
                             <th scope="col">Session Duration</th>
                             <th scope="col">Package ID</th>
                             <th scope="col">Category</th>
@@ -33,12 +33,12 @@
                         @for ($i = 0; $i < 6; $i++) 
                         <tr style="vertical-align: baseline">
                             <td class="text-center">{{ $i + 1 }}</td>
-                            <td>11 May, 2021, 10:23 PM</td>
                             <td>Jorina Khatun</td>
                             <td class="text-center">
                                 <img src="{{ asset('frontend/images/person.jpg') }}" alt="" class="rounded-circle"
                                     style="width: 70px; height: 70px;">
                             </td>
+                            <td>11 May, 2021, 10:23 PM</td>
                             <td>20 minutes</td>
                             <td>Premium</td>
                             <td>Cardiac</td>
